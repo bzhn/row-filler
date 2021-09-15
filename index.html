@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <script src="./index.js"></script>
+    <title>Создание запросов</title>
+</head>
+<body>
+    <div>
+        <h3>Query (one row):</h3>
+        <textarea id="querySQL" style="width: 70%;"></textarea>
+    </div>
+
+    <div>
+        <h3>Values:</h3>
+        <div>
+            <h6>Separator</h6>
+            <textarea id="separator" style="width: 30px;">%d</textarea>
+        
+            <h6>Values</h6>
+            <textarea id="valList" style="height: 20em;"></textarea>
+            <br>
+            <input type="checkbox" id="crop" onchange="showCropOptions()"/>Extract left symbols? <br>
+            <input id="cropAmount" maxlength="5" size="20" value="8" style="margin-bottom: 10px; visibility: hidden;">
+        </div>
+    </div>
+    
+    <div>
+        <button id="generate" onclick="generate()">Generate</button>
+        <h3>Result:</h3>
+        <textarea id="readySQL"></textarea>
+    </div>
+</body>
