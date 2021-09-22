@@ -1,11 +1,12 @@
 function generate() {
     values = document.getElementById("valList").value;
     query = document.getElementById("querySQL").value;
-    separator = document.getElementById("separator").value;
+    replaceMatch = document.getElementById("replaceMatch").value;
     ready = document.getElementById("readySQL");
     useRegexp = document.getElementById("useRegexp").checked;
     regexRule = document.getElementById("regexRule").value;
 
+    replaces = replaceMatch.split("\n")
     rows = values.split("\n");
     newrows = "";
     
@@ -26,7 +27,11 @@ function generate() {
 
     for (i in rows) {
         if (rows[i] != "") { 
-        newrows += query.replace(separator, rows[i]) + "\n";
+            for (j in replaces) {
+                if (replaces[j] != "") {
+                    newrows += query.replaceAll(replaces[j], rows[i]) + "\n";
+                }
+            }
         }
     }
 
