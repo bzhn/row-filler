@@ -7,12 +7,13 @@ https://bzhn.github.io/row-filler/
 
 1. Input a new template with `%d` as a placeholder. You can choose another placeholder if needed.
 
-![image](https://user-images.githubusercontent.com/89320434/205217381-6cdd139a-fd04-4c19-ad62-d2f34d5b297f.png)
+![image](https://user-images.githubusercontent.com/89320434/205462528-ea574d49-4278-4a9b-8658-18c374a49d0d.png)
 
-2. Change custom separator and insert values wich will be placed instead of placeholder.
 
-![image](https://user-images.githubusercontent.com/89320434/205217488-f5c86044-04b3-4e7f-82a8-503348eafa42.png)
+2. Change custom separator (optionally) and insert values wich will be placed instead of placeholder.
+
+![image](https://user-images.githubusercontent.com/89320434/205462550-0bab2819-8991-468f-9915-f4c8cfb5f4cb.png)
 
 3. Click **Generate** and copy result.
 
-![image](https://user-images.githubusercontent.com/89320434/205217541-50fe8283-0045-4b06-a18a-c67fa048be83.png)
+![image](https://user-images.githubusercontent.com/89320434/205462580-21e3ae67-b86c-4d96-8762-b7bb8960ffb6.png)
